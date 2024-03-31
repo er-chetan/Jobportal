@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Entry</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./owl-slider/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl-slider/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./job.css">
+
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-head{
+            color: #00B074;
+            width: 20%;
+            margin-left: 20px;
+        }
+        .nav-links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        .nav-links a{
+            font-weight: 600;
+            text-decoration: none;
+            color: black;
+        }
+        .nav-links a:hover{
+            color: #00B074;
+            transition: all 1s ease .1s;
+        }
+        .drop{
+            position: relative;
+        }
+        .drop-links{
+            background-color: rgb(255, 253, 253);
+            width: 120px;
+            padding: 2px 10px;
+            border: 1px solid #dcdfde;
+            border-radius: 3px;
+            position: absolute;
+            z-index: 10;
+            display: none;
+        }
+        .drop:hover .drop-links{
+            display: block;
+        }
+        
+        .nav-links>button{
+            color: white;
+            padding: 30px;
+            background-color: #00B074;
+            font-weight: 800;
+            font-size: 20px;
+            border: none;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+    <div class="navbar" >
+        <h1 class="logo-head">JOB PORTAL</h1>
+        <div class="nav-links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <div class="drop">
+                <a href="" >Jobs <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="drop-links">
+                    <a href="">job post 1</a>
+                    <a href="">error</a>
+                </div>
+            </div>
+            <div class="drop">
+                <a href="" >Pages <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="drop-links">
+                    <a href="">job post 1</a>
+                    <a href="">error</a>
+                </div>
+            </div>
+            <a href="">Contact</a>
+            <button>Post a Job</button>
+        </div>
+       
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./owl-slider/owl.carousel.min.js"></script>
+    <script src="./job.js"></script>
+
+</body>
